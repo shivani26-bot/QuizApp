@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(17, 17, 100);
+}
+
+.app {
+  width: 100%;
+  max-width: 540px;
+  background-color: white;
+
+  margin: 150px auto 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.app h1 img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.app h1 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  color: rgb(17, 17, 100);
+}
+
+.quiz {
+  padding: 20px 0;
+}
+.quiz h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(17, 17, 100);
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin: 12px auto;
+  cursor: pointer;
+  color: rgb(17, 17, 100);
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: left;
+  /* This specifies that the transition should apply to all CSS properties that support transitions. Instead of specifying individual properties like width, height, background-color, etc., all covers any property that changes. */
+  /* specifies the duration of the transition */
+  transition: all 0.5s;
+  background-color: rgb(255, 255, 255);
+}
+
+/* hover effect should work when button is not disabled  */
+.btn:hover:not([disabled]) {
+  background-color: black;
+  color: white;
+}
+.btn:disabled {
+  cursor: no-drop;
+}
+#next-btn {
+  margin: 20px auto 0;
+  width: 30%;
+  padding: 10px;
+  border-radius: 5px;
+
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  /* display: block; */
+  /* hide the next button until any anwer isn't selected  */
+  display: none;
+  background-color: rgb(20, 20, 100);
+}
+
+.correct {
+  background-color: #9aeabc;
+}
+.incorrect {
+  background-color: #ff9393;
+}
